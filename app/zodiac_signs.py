@@ -29,6 +29,3 @@ def zodiac_sign(day, month):
 
 
 print(zodiac_sign(30, 8))
-
-#print("Ваш знак Зодиака: ", zodiac_sign(day=int(input("Введите день вашего рождения (от 1 до 31): ")),
-                                     #    month=int(input("Введите месяц вашего рождения (от 1 до 12): "))))

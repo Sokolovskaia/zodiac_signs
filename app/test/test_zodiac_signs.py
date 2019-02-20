@@ -1,27 +1,27 @@
 from app.zodiac_signs import zodiac_sign
 
 
-def test_zodiac_sign_aries():  # овен
+def test_zodiac_sign_aries():
     result = zodiac_sign(1, 4)
     assert "Овен" == result
 
 
-def test_zodiac_sign_taurus():  # телец
+def test_zodiac_sign_taurus():
     result = zodiac_sign(21, 4)
     assert "Телец" == result
 
 
-def test_zodiac_sign_gemini():  # близнецы
+def test_zodiac_sign_gemini():
     result = zodiac_sign(21, 6)
     assert "Близнецы" == result
 
 
-def test_zodiac_sign_cancer():  # рак
+def test_zodiac_sign_cancer():
     result = zodiac_sign(1, 7)
     assert "Рак" == result
 
 
-def test_zodiac_sign_leo():  # лев
+def test_zodiac_sign_leo():
     result = zodiac_sign(23, 7)
     assert "Лев" == result
 
