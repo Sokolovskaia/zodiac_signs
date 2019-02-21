@@ -2,70 +2,52 @@ from app.zodiac_signs import zodiac_sign
 
 
 def test_zodiac_sign_aries():
-    result = zodiac_sign(1, 4)
-    assert "Овен" == result
+    assert "Овен" == zodiac_sign(1, 4)
 
 
 def test_zodiac_sign_taurus():
-    result = zodiac_sign(21, 4)
-    assert "Телец" == result
+    assert "Телец" == zodiac_sign(21, 4)
 
 
 def test_zodiac_sign_gemini():
-    result = zodiac_sign(21, 6)
-    assert "Близнецы" == result
+    assert "Близнецы" == zodiac_sign(21, 6)
 
 
 def test_zodiac_sign_cancer():
-    result = zodiac_sign(1, 7)
-    assert "Рак" == result
+    assert "Рак" == zodiac_sign(1, 7)
 
 
 def test_zodiac_sign_leo():
-    result = zodiac_sign(23, 7)
-    assert "Лев" == result
+    assert "Лев" == zodiac_sign(23, 7)
 
 
 def test_zodiac_sign_virgo():
-    result = zodiac_sign(23, 9)
-    assert "Дева" == result
+    assert "Дева" == zodiac_sign(23, 9)
 
 
 def test_zodiac_sign_libra():
-    result = zodiac_sign(1, 10)
-    assert "Весы" == result
+    assert "Весы" == zodiac_sign(1, 10)
 
 
 def test_zodiac_sign_scorpio():
-    result = zodiac_sign(24, 10)
-    assert "Скорпион" == result
+    assert "Скорпион" == zodiac_sign(24, 10)
 
 
 def test_zodiac_sign_sagittarius():
-    result = zodiac_sign(22, 12)
-    assert "Стрелец" == result
+    assert "Стрелец" == zodiac_sign(22, 12)
 
 
 def test_zodiac_sign_capricorn():
-    result = zodiac_sign(1, 1)
-    assert "Козерог" == result
+    assert "Козерог" == zodiac_sign(1, 1)
 
 
 def test_zodiac_sign_aquarius():
-    result = zodiac_sign(21, 1)
-    assert "Водолей" == result
+    assert "Водолей" == zodiac_sign(21, 1)
 
 
 def test_zodiac_sign_pisces():
-    result = zodiac_sign(20, 3)
-    assert "Рыбы" == result
+    assert "Рыбы" == zodiac_sign(20, 3)
 
 
 def test_zodiac_sign_input_error_day():
-    result = zodiac_sign(40, 3)
-    assert "не известен (ошибка ввода даты рождения)" == result
-
-
-def test_zodiac_sign_input_error_month():
-    result = zodiac_sign(1, 18)
-    assert "не известен (ошибка ввода даты рождения)" == result
+    assert "Ошибка ввода даты рождения" == zodiac_sign(40, 3)
